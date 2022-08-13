@@ -1,0 +1,38 @@
+$font-path: "../fonts/circe";
+$font-path_2: "../fonts/optima";
+@font-face {
+    font-family: 'Circe';
+    src: url('#{$font-path}/Circe-Regular.eot');
+    src: url('#{$font-path}/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Circe-Regular.woff2') format('woff2'),
+        url('#{$font-path}/Circe-Regular.woff') format('woff'),
+        url('#{$font-path}/Circe-Regular.ttf') format('truetype'),
+        url('#{$font-path}/Circe-Regular.svg#Circe-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Circe';
+    src: url('#{$font-path}/Circe-Light.eot');
+    src: url('#{$font-path}/Circe-Light.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path}/Circe-Light.woff2') format('woff2'),
+        url('#{$font-path}/Circe-Light.woff') format('woff'),
+        url('#{$font-path}/Circe-Light.ttf') format('truetype'),
+        url('#{$font-path}/Circe-Light.svg#Circe-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Optima Cyr';
+    src: url('#{$font-path_2}/Optima.eot');
+    src: url('#{$font-path_2}/Optima.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-path_2}/Optima.woff2') format('woff2'),
+        url('#{$font-path_2}/Optima.woff') format('woff'),
+        url('#{$font-path_2}/Optima.ttf') format('truetype'),
+        url('#{$font-path_2}/Optima.svg#Optima') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

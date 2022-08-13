@@ -1,0 +1,136 @@
+.footer_top{
+	// margin-top: 100px;
+	margin-top: 50px;
+	@include media-breakpoint-down(md) {
+		margin-top: 50px;
+	}
+	color: theme-color("danger");
+	padding: calc(135px / 1.5) 0;
+	@include media-breakpoint-down(sm) {
+		padding: 73px 0;
+		@include media-breakpoint-down(xs) {
+			padding: 50px 0 10px;
+		}
+	}
+}
+.f_nav{
+	li{
+		margin-bottom: 20px;
+		@include media-breakpoint-down(md) {
+			margin-bottom: 16px;
+			@include media-breakpoint-down(sm) {
+				margin-bottom: 2px;
+			}
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	a{
+		transition: all 0.3s ease;
+		color: theme-color("danger");
+		font-size: 24px;
+		@include media-breakpoint-down(lg) {
+			font-size: 20px;
+			@include media-breakpoint-down(sm) {
+				font-size: 17px;
+			}
+		}
+		&:hover{
+			color: #fdb2a7;
+			text-decoration: none;
+			// transition: all 0.3s ease;
+		}
+	}
+}
+.contact_nav{
+	font-size: 24px;
+	@include media-breakpoint-down(md) {
+		font-size: 18px;
+		@include media-breakpoint-down(sm) {
+			font-size: 17px;
+		}
+	}
+	a{
+		color: theme-color("danger");
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.payments_list{
+	padding-top: 35px;
+	li{
+		svg{
+			display: block;
+			width: auto;
+			height: calc(84px / 1.5);
+			@include media-breakpoint-down(sm) {
+				height: calc(60px / 1.5);
+			}
+		}
+	}
+}
+.subscribe_block{
+	h3{
+		font-size: 24px;
+		@include media-breakpoint-down(lg) {
+			font-size: 22px;
+			@include media-breakpoint-down(md) {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.footer_bottom{
+	padding-top: calc(70px / 1.5);
+	padding-bottom: calc(110px / 1.5);
+	@include media-breakpoint-down(sm) {
+		padding: 46px 0;
+		@include media-breakpoint-down(xs) {
+			padding: 27px 0;
+		}
+	}
+}
+.f_list{
+	li{
+		margin-right: 53px;
+		&:last-child{
+			@include media-breakpoint-up(lg) {
+				margin-right: 0;
+			}
+		}
+		@include media-breakpoint-down(md) {
+			margin: 0 15px;
+			@include media-breakpoint-down(sm) {
+				margin: 0 10px;
+				@include media-breakpoint-down(xs) {
+					margin: 0 5px;
+				}
+			}
+		}
+		a{
+			text-transform: capitalize;
+			text-decoration: underline;
+			transition: color 0.3s ease;
+			color: #fff;
+			font-size: 17px;
+			@include media-breakpoint-down(xs) {
+				font-size: 13px;
+			}
+			&:hover{
+				color: #fdb2a7;
+			}
+		}
+	}
+}
+.copy{
+	font-size: 17px;
+	@include media-breakpoint-down(md) {
+		opacity: 0.4;
+		@include media-breakpoint-down(xs) {
+			font-size: 13px;
+		}
+	}
+}
