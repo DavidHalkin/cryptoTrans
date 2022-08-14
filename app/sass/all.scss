@@ -28,6 +28,18 @@
 	}
 }
 
+.section_advantage {
+	.img_prev {
+		height: 100px;
+		text-align: center;
+
+		img {
+			display: inline-block;
+			height: 100%;
+			width: auto;
+		}
+	}
+}
 
 .list_faq {
 	li {

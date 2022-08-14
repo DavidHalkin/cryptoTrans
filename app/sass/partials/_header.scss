@@ -1,3 +1,5 @@
+@import '_menu_btn';
+
 .dropdown_cstm {
 	&.show {
 		.btn {
@@ -5,8 +7,14 @@
 		}
 	}
 
-	.btn {
+	>.btn {
 		color: #aeb4b9;
+		display: flex;
+		align-items: center;
+
+		.txt {
+			margin-left: 22px;
+		}
 	}
 
 	.dropdown-menu {
@@ -17,13 +25,53 @@
 	}
 }
 
-.header {
-	padding-top: 40px;
+.ico_user {
+	max-width: 21px;
+	flex: 0 0 21px;
 
-	.logo {
-		a {
-			color: #fff;
+	svg {
+		width: 100%;
+		display: block;
+		fill: theme-color('success');
+	}
+}
+
+.logo {
+	.footer & {
+		margin-bottom: 10px;
+	}
+
+	a {
+		display: block;
+
+		img {
+			display: block;
+			height: auto;
+			width: 171px;
+
+			@include media-breakpoint-down(lg) {
+				width: 130px;
+			}
 		}
+
+		i {
+			font-size: 0;
+			line-height: 0;
+			text-indent: -9999px;
+			width: 0;
+			height: 0;
+			position: absolute;
+			left: -9999px;
+		}
+	}
+}
+
+.header {
+	padding: 40px 0;
+
+	@include media-breakpoint-down(md) {
+		// background: #000;
+		padding: 15px 0;
 	}
 
 	.nav {
@@ -31,6 +79,11 @@
 
 		li {
 			padding: 0 32px;
+			padding: 0 3.6%;
+
+			@include media-breakpoint-down(lg) {
+				padding: 0 2.6%;
+			}
 
 			a {
 				font-size: 16px;
