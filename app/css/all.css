@@ -104,7 +104,7 @@ label { font-size: 14px; line-height: 18px; padding-left: 8px; }
 
 .footer .copy:before { content: ""; width: 200px; height: 2px; background: #17313f; position: absolute; top: 0; left: 0; }
 
-@media (max-width: 999.98px) { .footer .copy:before { content: none; } }
+@media (max-width: 575.98px) { .footer .copy:before { content: none; } }
 
 .soc_list { margin: 0 -10px; }
 
