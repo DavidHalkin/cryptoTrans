@@ -318,4 +318,10 @@ body.overflow { overflow: hidden; }
 
 @media (max-width: 767.98px) { .faq_section { -webkit-border-radius: 0 0 9px 9px; border-radius: 0 0 9px 9px; } }
 
+.list_filter { font-size: 13px; }
+
+.list_filter li.active a { color: #32c79f; }
+
+.list_filter li a { color: #fff; }
+
 /*# sourceMappingURL=all.css.map */

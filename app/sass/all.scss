@@ -246,3 +246,19 @@
 		border-radius: 0 0 9px 9px;
 	}
 }
+
+.list_filter {
+	font-size: 13px;
+
+	li {
+		&.active {
+			a {
+				color: theme-color('success');
+			}
+		}
+
+		a {
+			color: #fff;
+		}
+	}
+}
