@@ -33,6 +33,7 @@
 		cursor: pointer !important;
 		margin-bottom: 0;
 		background: none;
+		min-width: 0;
 
 		&.placeholder-shown {
 			// border-color: gray !important;
@@ -71,9 +72,9 @@
 				@include text-truncate;
 			}
 
-			@include media-breakpoint-down(md) {
-				line-height: 38px;
-			}
+			// @include media-breakpoint-down(md) {
+			// 	line-height: 38px;
+			// }
 		}
 
 		.jcf-select-opener {
@@ -164,10 +165,11 @@
 					color: #fff;
 					@include text-truncate;
 					cursor: pointer;
+					transition: all 0.3s ease;
 
 					&:hover {
-						background: #17303d !important;
-						// color: theme-color("primary");
+						// background: #17303d !important;
+						color: theme-color("success");
 					}
 
 					&.jcf-selected {
