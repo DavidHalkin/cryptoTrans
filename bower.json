@@ -10,7 +10,8 @@
   "homepage": "",
   "dependencies": {
     "jquery": "^3.2.1",
-    "bootstrap": "^4.2.1"
+    "bootstrap": "^4.2.1",
+    "jcf": "^1.2.3"
   },
   "devDependencies": {}
 }

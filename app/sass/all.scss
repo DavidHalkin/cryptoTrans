@@ -6,6 +6,7 @@
 '_param',
 'partials/ui/_webfont',
 'partials/ui/_scroll',
+'partials/ui/_select',
 
 'partials/_footer',
 'partials/_header';
@@ -254,11 +255,23 @@
 		&.active {
 			a {
 				color: theme-color('success');
+				text-decoration: underline;
 			}
 		}
 
 		a {
 			color: #fff;
+			text-decoration: none;
+
+			&:hover {
+				color: theme-color('success');
+			}
 		}
+	}
+}
+
+.wrap_holder {
+	@include media-breakpoint-up(xl) {
+		max-width: 480px;
 	}
 }

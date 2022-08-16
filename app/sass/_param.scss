@@ -254,3 +254,17 @@ label {
 		flex: 0 0 230px;
 	}
 }
+
+.numbered {
+	li {
+		counter-increment: counter;
+		font-size: 16px;
+		line-height: 21px;
+		padding-bottom: 18px;
+
+		&:before {
+			content: counter(counter) ". ";
+			font-weight: bold;
+		}
+	}
+}
