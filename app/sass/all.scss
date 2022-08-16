@@ -5,6 +5,7 @@
 '_mixin',
 '_param',
 'partials/ui/_webfont',
+'partials/ui/_scroll',
 
 'partials/_footer',
 'partials/_header';
@@ -17,6 +18,8 @@
 			height: 150px;
 			display: block;
 			text-decoration: none;
+
+
 
 			img {
 				object-fit: cover;
@@ -33,10 +36,23 @@
 		height: 100px;
 		text-align: center;
 
+		@include media-breakpoint-down(md) {
+			height: 70px;
+		}
+
 		img {
 			display: inline-block;
 			height: 100%;
 			width: auto;
+		}
+	}
+
+	p {
+
+		@include media-breakpoint-down(md) {
+			max-width: 250px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 }
@@ -54,6 +70,12 @@
 			padding: 10px 10px 10px 20px;
 			min-height: 54px;
 
+			@include media-breakpoint-down(lg) {
+				font-size: 13px;
+				line-height: 16px;
+				min-height: 30px;
+			}
+
 			&:hover {
 				text-decoration: none;
 				background: #f0f0f0;
@@ -70,22 +92,40 @@
 		pointer-events: none;
 
 		.circle {
-			max-width: 50px;
-			flex: 0 0 50px;
-			height: 50px;
+			--size: 50px;
+			max-width: var(--size);
+			flex: 0 0 var(--size);
+			height: var(--size);
 			border: 2px solid #173f4f;
 			border-radius: 50%;
+			position: relative;
+
+
+
+			@include media-breakpoint-down(lg) {
+				--size: 30px;
+			}
 		}
 
 		strong {
 			font-size: 18px;
 			line-height: 20px;
 			padding-bottom: 1px;
+
+			@include media-breakpoint-down(lg) {
+				font-size: 16px;
+				line-height: 18px;
+			}
 		}
 
 		p {
 			font-size: 12px;
 			line-height: 14px;
+
+			// @include media-breakpoint-down(lg) {
+			// 	font-size: 16px;
+			// 	line-height: 18px;
+			// }
 		}
 
 		&.active {
@@ -105,6 +145,18 @@
 
 			.circle {
 				background-color: #173f4f;
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 16px;
+					height: 17px;
+					background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Слой_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 1024 1024' style='enable-background:new 0 0 1024 1024;' xml:space='preserve'%3E%3Cpath fill='%2332c79f' d='M416.83,798.08c-16.19,0-32.32-6.21-44.67-18.56L119.42,525.76c-24.64-24.77-24.64-64.96,0-89.73 c24.7-24.77,64.7-24.77,89.34,0l208.06,208.9L814.4,245.76c24.64-24.83,64.64-24.83,89.34,0c24.64,24.77,24.64,64.9,0,89.66 L461.5,779.52C449.15,791.87,432.96,798.08,416.83,798.08z' /%3E%3C/svg%3E");
+					background-size: cover;
+				}
 			}
 
 			strong {
@@ -115,5 +167,82 @@
 				color: #797f85;
 			}
 		}
+	}
+}
+
+.items_list {
+	border: 1px solid #304955;
+	overflow: hidden;
+
+	ul {
+		max-height: 290px;
+		overflow: auto;
+	}
+
+	li {
+		&.active {
+			a {
+				background: #23404e;
+			}
+		}
+
+		a {
+			padding: 7px 13px;
+
+			&:hover {
+				text-decoration: none;
+				background: #23404e;
+			}
+		}
+	}
+
+	.ico {
+		max-width: 30px;
+		flex: 0 0 30px;
+		height: 30px;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	.txt {
+		padding-left: 10px;
+		flex-grow: 1;
+		max-width: 100%;
+		flex-basis: 0;
+		min-width: 0;
+
+		strong {
+			font-size: 16px;
+			line-height: 18px;
+			color: #fff;
+			font-weight: normal;
+		}
+
+		span {
+			color: #787e84;
+			font-size: 10px;
+			line-height: 12px;
+		}
+	}
+}
+
+.l_section {
+	border-radius: 9px 0 0 9px;
+
+	@include media-breakpoint-down(sm) {
+		border-radius: 9px 9px 0 0;
+	}
+}
+
+.faq_section {
+	border-radius: 0 9px 9px 0;
+	background: #fff;
+
+	@include media-breakpoint-down(sm) {
+		border-radius: 0 0 9px 9px;
 	}
 }

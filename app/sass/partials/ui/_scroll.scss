@@ -1,0 +1,26 @@
+.scroll,
+html {
+	overflow-y: auto;
+	// scrollbar-width: thin;
+	// scrollbar-color: #000 #e4e4e4;
+	// padding-right: 10px;
+	// scrollbar-color: darken(#797f85, 10%) #1f3744;
+	scrollbar-color: theme-color("success") #1f3744;
+	scrollbar-width: thin;
+
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background-color: #1f3744;
+		// border-radius: 100px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		// border-radius: 100px;
+		background: darken(#797f85, 10%);
+		background: theme-color("success");
+		// box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+	}
+}

@@ -36,8 +36,9 @@ a,
 	border-radius: 9px;
 }
 
-.fz_18 {
-	font-size: 18px;
+
+.fz_10 {
+	font-size: 10px;
 }
 
 .fz_12 {
@@ -50,6 +51,10 @@ a,
 
 .fz_16 {
 	font-size: 16px;
+}
+
+.fz_18 {
+	font-size: 18px;
 }
 
 .fz_24 {
@@ -158,8 +163,9 @@ h2 {
 			color: theme-color('danger');
 		}
 
-		.form-control {
-			border-bottom-color: theme-color('danger');
+		.form-control,
+		.input-group_custom .input-group-prepend .input-group-text {
+			border-bottom-color: theme-color('danger') !important;
 		}
 	}
 }
@@ -170,8 +176,9 @@ h2 {
 			color: theme-color('success');
 		}
 
-		.form-control {
-			border-bottom-color: theme-color('success');
+		.form-control,
+		.input-group_custom .input-group-prepend .input-group-text {
+			border-bottom-color: theme-color('success') !important;
 		}
 	}
 }
@@ -180,4 +187,70 @@ label {
 	font-size: 14px;
 	line-height: 18px;
 	padding-left: 8px;
+}
+
+.change_btn {
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border: 0;
+	outline: none;
+
+	@include media-breakpoint-down(xs) {
+		transform: rotate(-90deg);
+	}
+
+	svg {
+		display: block;
+
+		path {
+			transition: all 0.6s ease;
+		}
+	}
+
+	&:hover {
+		path {
+			fill: theme-color('success');
+		}
+	}
+}
+
+.input-group_custom {
+	.input-group-prepend {
+		order: -1;
+		margin: 0;
+
+		.input-group-text {
+			background: $input-bg;
+			border-left: 0;
+			border-right: 0;
+			border-top: 0;
+			transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+			user-select: none;
+		}
+	}
+
+	.form-control {
+		&:focus {
+			~.input-group-prepend {
+				.input-group-text {
+					border-color: $input-focus-border-color;
+				}
+
+			}
+		}
+	}
+}
+
+.minw_0 {
+	min-width: 0;
+}
+
+.col_xl_200 {
+	@include media-breakpoint-up(xl) {
+		max-width: 230px;
+		flex: 0 0 230px;
+	}
 }
