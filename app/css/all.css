@@ -3,7 +3,11 @@
 
 .font-weight-light { font-family: var(--light); }
 
-body { font-family: 'Proxima Nova Rg'; background: -webkit-linear-gradient(45deg, #15212C 0%, #0C3749 100%); background: -o-linear-gradient(45deg, #15212C 0%, #0C3749 100%); background: linear-gradient(45deg, #15212C 0%, #0C3749 100%); background-attachment: fixed; }
+body { font-family: 'Proxima Nova Rg'; background: -webkit-linear-gradient(45deg, #15212C 0%, #0C3749 100%); background: -o-linear-gradient(45deg, #15212C 0%, #0C3749 100%); background: linear-gradient(45deg, #15212C 0%, #0C3749 100%); background-attachment: fixed; position: relative; }
+
+body:after { content: ''; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/noise.svg); }
+
+.wrapper { position: relative; z-index: 1; }
 
 body, html { height: 100%; }
 
@@ -49,7 +53,11 @@ h2 { font-size: 24px; font-weight: bold; margin-bottom: 50px; }
 
 .col-320 { max-width: 320px; -webkit-box-flex: 0; -ms-flex: 0 0 320px; flex: 0 0 320px; }
 
-.bg_grad { background: -webkit-linear-gradient(45deg, #192631 0%, #174051 100%); background: -o-linear-gradient(45deg, #192631 0%, #174051 100%); background: linear-gradient(45deg, #192631 0%, #174051 100%); }
+.bg_grad { background: -webkit-linear-gradient(45deg, #192631 0%, #174051 100%); background: -o-linear-gradient(45deg, #192631 0%, #174051 100%); background: linear-gradient(45deg, #192631 0%, #174051 100%); position: relative; z-index: 1; overflow: hidden; }
+
+.bg_grad:after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/noise.svg); z-index: -1; }
+
+.bg_grad * { position: relative; z-index: 1; }
 
 .rad_9_left { -webkit-border-radius: 9px 0 0 9px; border-radius: 9px 0 0 9px; }
 
