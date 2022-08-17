@@ -7,6 +7,7 @@
 'partials/ui/_webfont',
 'partials/ui/_scroll',
 'partials/ui/_select',
+'partials/ui/_checkbox',
 
 'partials/_footer',
 'partials/_header';
@@ -273,5 +274,48 @@
 .wrap_holder {
 	@include media-breakpoint-up(xl) {
 		max-width: 480px;
+	}
+}
+
+.coin_img {
+	max-width: 30px;
+	flex: 0 0 30px;
+	height: 30px;
+
+	img {
+		max-width: 100%;
+		display: block;
+		height: auto;
+	}
+}
+
+.coin_txt {
+	padding-left: 10px;
+}
+
+.border_bottom {
+	position: relative;
+
+	&:after {
+		content: '';
+		height: 2px;
+		background: #174051;
+		position: absolute;
+		bottom: 0;
+		--indent: -13px;
+		left: var(--indent);
+		right: var(--indent);
+
+		@include media-breakpoint-down(md) {
+			--indent: -5px;
+		}
+	}
+
+	.amount_txt {
+		font-size: 21px;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 16px;
+		}
 	}
 }

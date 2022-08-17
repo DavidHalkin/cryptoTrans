@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>#</title>
+	<link rel="stylesheet" href="css/custom_bootstrap.css">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="centered d-flex align-items-center">
+				<strong class="logo"><a href="#"><img src="images/logo.svg" alt=""><i>cryptoTrans</i></a></strong>
+				<div class="nav_part col pr-0">
+					<div class="nav_part_holder">
+						<ul class="nav ">
+							<li class="active"><a href="#">Обмен</a></li>
+							<li><a href="#">Резервы</a></li>
+							<li><a href="#">Правила</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Партнерам</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="dropdown dropdown_cstm  ml-auto">
+					<button class="btn pr-0" type="button" data-toggle="dropdown" aria-expanded="false">
+						<i class="ico_user">
+							<?xml version="1.0" encoding="utf-8"?>
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"
+								style="enable-background:new 0 0 24 24;" xml:space="preserve">
+								<g>
+									<g>
+										<g>
+											<path d="M12,13c-0.9,0-1.7-0.3-2.4-0.7C7.9,11.2,7,8.9,7,6c0-2.8,2.2-5,5-5s5,2.2,5,5c0,2.9-0.9,5.2-2.6,6.3
+											C13.7,12.7,12.9,13,12,13z M12,3c-1.7,0-3,1.3-3,3c0,2.2,0.6,3.9,1.7,4.6c0.8,0.5,1.8,0.5,2.6,0C14.4,9.9,15,8.2,15,6
+											C15,4.3,13.7,3,12,3z" />
+										</g>
+									</g>
+									<g>
+										<g>
+											<path d="M12,23c-2.3,0-10-0.3-10-4s2.7-5,5.7-5.9c0.2-0.1,1-0.4,1.3-1.9l2,0.4c-0.3,1.8-1.3,2.9-2.7,3.4c-3,1-4.3,1.8-4.3,4
+											c0,1.1,4.2,2,8,2s8-0.9,8-2c0-2.2-1.3-3-4.3-4.1c-1.4-0.5-2.3-1.6-2.7-3.4l2-0.4c0.3,1.5,1.1,1.8,1.4,1.9c3,1,5.7,2.2,5.7,5.9
+											C22,19.9,21.3,23,12,23z" />
+										</g>
+									</g>
+								</g>
+							</svg>
+						</i>
+						<span class="txt d-none d-lg-block">Вход/регистрация</span>
+					</button>
+					<div class="dropdown-menu b_shadow dropdown-menu-right bg_gray">
+						<div class="form-group">
+							<label for="e-mail">E-mail:</label>
+							<input type="text" class="form-control" id="e-mail" placeholder="gamlet.design@gmail.com">
+						</div>
+						<div class="form-group  is-invalid">
+							<label for="pass">Пароль:</label>
+							<input type="password" class="form-control" id="pass" placeholder="" value="123">
+							<div class="pl-2 pt-2 fz_14"><a href="#" class="text-muted">Забыл пароль</a></div>
+						</div>
+
+						<button
+							class="btn btn-block btn-outline-success fz_14 text-white mw_150 mx-auto btn-sm">Войти</button>
+						<div class="text-center"><a href="#" class="text-success fz_14">Регистрация</a></div>
+					</div>
+				</div>
+				<span class="menu-wrapper">
+					<em class="hamburger-menu"></em>
+				</span>
+			</div>
+		</div>
+		<div class="main">
+			<div class="centered">
+				<div class="section_steps pb-5 mb-5">
+					<div class="row no-gutters b_shadow rad_9">
+						<div class="col-12 col-md d-flex flex-wrap bg_grad l_section minw_0">
+							<div class="col-4 bd_right py-5  pl-xl-4 d-none d-lg-block">
+								<h2 class="mb-4">Этап обмена</h2>
+								<ul class="steps_nav list-unstyled">
+									<li class="d-flex active">
+										<span class="circle"></span>
+										<div class="steps_info col pr-0">
+											<strong class="d-block text-uppercase">Выбор валюты</strong>
+											<p class="mb-0">Выберите валютную пару для обмена</p>
+										</div>
+									</li>
+									<li class="d-flex">
+										<span class="circle"></span>
+										<div class="steps_info col pr-0">
+											<strong class="d-block text-uppercase">Ввод данных</strong>
+											<p class="mb-0">Укажите необходимые реквизиты и контактные данные</p>
+										</div>
+									</li>
+									<li class="d-flex">
+										<span class="circle"></span>
+										<div class="steps_info col pr-0">
+											<strong class="d-block text-uppercase">Подтверждение</strong>
+											<p class="mb-0">Проверьте введенные данные и подтвердите корректность</p>
+										</div>
+									</li>
+									<li class="d-flex">
+										<span class="circle"></span>
+										<div class="steps_info col pr-0">
+											<strong class="d-block text-uppercase">Ожидание оплаты</strong>
+											<p class="mb-0">Совершите перевод на реквизиты, которые указаны на экране</p>
+										</div>
+									</li>
+									<li class="d-flex">
+										<span class="circle"></span>
+										<div class="steps_info col pr-0">
+											<strong class="d-block text-uppercase">Выплата заказа</strong>
+											<p class="mb-0">Ожидайте выплаты со стороны обменника на ваши реквизиты</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col py-3 py-lg-5 px-lg-4 pl-xl-5 minw_0">
+								<h2 class="mb-4">Выбор валюты</h2>
+								<div class="wrap_holder">
+									<div class="row justify-content-center justify-content-md-start">
+										<div class="col-12 col-sm minw_0">
+											<div class="d-flex align-items-center mb-1">
+												<h4 class="fz_14 pl-2 mb-0 pr-1">Отдаете:</h4>
+												<ul class="list_filter list-unstyled mb-0 d-flex">
+													<li class="px-1 active"><a href="#">Coin</a></li>
+													<li class="px-1"><a href="#">Банк</a></li>
+													<li class="px-1"><a href="#">ПС</a></li>
+												</ul>
+											</div>
+											<div class="items_list rad_9 mb-3">
+												<ul class="list-unstyled mb-0 scroll">
+													<li class="active">
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Bitcoin BTC</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Bitcoin BTC</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="form-group is-invalid">
+												<label for="a1">Сумма обмена:</label>
+												<div class="input-group input-group_custom">
+													<input type="text" class="form-control" id="a1" value="0.00000488"
+														placeholder="">
+													<div class="input-group-prepend">
+														<div class="input-group-text text-success">BTC:</div>
+													</div>
+												</div>
+												<p class="text-muted fz_10 mb-0 pl-2 pt-1">Минимальная сумма: 0.001488</p>
+											</div>
+										</div>
+										<div class="col-auto my-4 pt-2">
+											<button class="change_btn">
+												<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg"
+													xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+													viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;"
+													xml:space="preserve">
+													<path fill="#797f85" d="M900.16,227.96c-14.78,9.5-19.14,29.14-9.76,43.99c132.35,209,70.21,485.72-138.79,618.06
+	S265.9,960.23,133.55,751.23S63.34,265.51,272.34,133.17c146.01-92.46,332.19-92.67,478.41-0.55c14.93,9.45,34.7,5.01,44.15-9.92
+	c9.45-14.93,5.01-34.7-9.92-44.15C545.54-71.79,229.57,0.45,79.24,239.89S1.14,795.3,240.58,945.63s555.41,78.1,705.74-161.34
+	c104.98-167.21,104.45-379.89-1.37-546.57c-9.35-14.99-29.09-19.57-44.08-10.22C900.63,227.65,900.4,227.8,900.16,227.96
+	L900.16,227.96z" />
+													<path fill="#797f85" d="M255.95,415.93c0,17.67,14.32,31.99,31.99,31.99h447.92c17.67-0.07,31.93-14.46,31.86-32.13
+	c-0.04-8.41-3.38-16.46-9.3-22.42L630.45,265.39c-12.5-12.5-32.77-12.5-45.27,0c-12.5,12.5-12.5,32.77,0,45.27l73.43,73.27H287.95
+	C270.28,383.93,255.95,398.26,255.95,415.93L255.95,415.93L255.95,415.93z M767.86,607.89c0-17.67-14.32-31.99-31.99-31.99l0,0
+	H287.95c-17.67,0.07-31.93,14.46-31.86,32.13c0.04,8.41,3.38,16.46,9.3,22.42l127.98,127.98c12.5,12.5,32.77,12.5,45.27,0
+	s12.5-32.77,0-45.27l0,0l-73.43-73.27h370.65C753.54,639.89,767.86,625.56,767.86,607.89L767.86,607.89z" />
+												</svg>
+											</button>
+										</div>
+										<div class="col-12 col-sm  minw_0">
+											<div class="d-flex align-items-center mb-1">
+												<h4 class="fz_14 pl-2 mb-0 pr-1">Получаете:</h4>
+												<ul class="list_filter list-unstyled mb-0 d-flex">
+													<li class="px-1 active"><a href="#">Coin</a></li>
+													<li class="px-1"><a href="#">Банк</a></li>
+													<li class="px-1"><a href="#">ПС</a></li>
+												</ul>
+											</div>
+											<div class="items_list rad_9 mb-3">
+												<ul class="list-unstyled mb-0 scroll">
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Bitcoin BTC</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li class="active">
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Bitcoin BTC</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="d-flex align-items-center">
+															<div class="ico">
+																<img src="http://fakeimg.pl/50x50?font=museo" alt=""
+																	class="rounded-circle">
+															</div>
+															<div class="txt">
+																<strong class="d-block text-truncate">Lorem ipsum dolor sit amet
+																	consectetur adipisicing</strong>
+																<span class="d-block">Резерв: 12.06468165 BTC</span>
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="form-group">
+												<label for="a2">Итого к получению:</label>
+												<div class="input-group input-group_custom">
+													<input type="text" class="form-control" id="a2" value="0.00000488"
+														placeholder="">
+													<div class="input-group-prepend">
+														<div class="input-group-text text-success">USDT:</div>
+													</div>
+												</div>
+												<p class="text-muted fz_10 mb-0 pl-2 pt-1">Максимальная сумма: 10000.001488</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center pt-3 text-center text-md-left">
+									<div class="col-12 col-md-auto">
+										<button class="btn btn-warning fz_18 font-weight-bold py-2 px-5">НАЧАТЬ ОБМЕН</button>
+									</div>
+									<div class="col-12 col-md pt-3 pt-md-0">
+										<p class="fz_14 text-danger mb-0">Минимальная сумма ВТС от 0.001488</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-4 col-lg-3 text-secondary py-3 pt-lg-5 px-3 px-xl-4 faq_section">
+							<h2 class="mb-4">FAQ</h2>
+							<ul class="list_faq list-unstyled ">
+								<li><a href="#">Об обменнике CRYPTOTRANS</a></li>
+								<li><a href="#">Почему можно доверять вашему обменнику?</a></li>
+								<li><a href="#">Как обменивать криптовалюту? </a></li>
+								<li><a href="#">Какие криптовалюты можно обменять на вашем обменнике?</a></li>
+								<li><a href="#">Как отслеживать статус моего заказа?</a></li>
+								<li><a href="#">Что делать, если я не запомнил номер обмена?</a></li>
+							</ul>
+							<div class="text-center pt-2">
+								<a href="#" class="btn btn-block mx-auto btn-outline-success text-secondary py-2 mw_180">Другие
+									вопросы</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section_request pb-5 mb-5">
+					<h2 class="text-center">Отзывы наших клиентов</h2>
+					<div class="row mx-n2">
+						<div class="col-12 col-md-6 col-lg-3 pb-3 px-2">
+							<div class="box border border-success p-3 bdw_2 rad_9 h-100 d-flex flex-column">
+								<h3 class="fz_18 font-weight-bold">Antonio Pripizducci</h3>
+								<p class="font-weight-light fz_12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do
+								</p>
+								<div class="read_more text-right fz_14 mt-auto">
+									<a href="#" class="d-inline-block text-success">Отзыв на BestChange</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 pb-3 px-2">
+							<div class="box border border-success p-3 bdw_2 rad_9 h-100 d-flex flex-column">
+								<h3 class="fz_18 font-weight-bold">Antonio Pripizducci</h3>
+								<p class="font-weight-light fz_12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do
+								</p>
+								<div class="read_more text-right fz_14 mt-auto">
+									<a href="#" class="d-inline-block text-success">Отзыв на BestChange</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 pb-3 px-2">
+							<div class="box border border-success p-3 bdw_2 rad_9 h-100 d-flex flex-column">
+								<h3 class="fz_18 font-weight-bold">Antonio Pripizducci</h3>
+								<p class="font-weight-light fz_12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+									do
+								</p>
+								<div class="read_more text-right fz_14 mt-auto">
+									<a href="#" class="d-inline-block text-success">Отзыв на BestChange</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3 pb-3 px-2">
+							<div class="box border border-success p-3 bdw_2 rad_9 h-100 d-flex flex-column">
+								<h3 class="fz_18 font-weight-bold">Antonio Pripizducci</h3>
+								<p class="font-weight-light fz_12">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Aliquam
+									in maxime deserunt, repellat debitis distinctio deleniti consequuntur animi at fugit quasi ut
+									officia suscipit quas neque unde placeat facilis minus.
+								</p>
+								<div class="read_more text-right fz_14 mt-auto">
+									<a href="#" class="d-inline-block text-success">Отзыв на BestChange</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center pt-3">
+						<a href="#" class="text-success fz_18 text-decoration-underline">Больше отзывов</a>
+					</div>
+				</div>
+				<div class="section_advantage  pb-5 mb-5">
+					<div class="text-center">
+						<h2 class="d-inline-flex flex-wrap mx-auto justify-content-center">Преимущества <img
+								src="images/logo.svg" alt="" width="142" class="mx-2">
+						</h2>
+					</div>
+
+					<div class="row mx-n2 justify-content-center">
+						<div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-3 px-2 text-center">
+							<div class="img_prev mb-3">
+								<img src='images/ico_1.svg' alt='' />
+							</div>
+							<h3 class="text-success fz_18 text-uppercase font-weight-bold">Всегда выгодный курс</h3>
+							<p class="fz_14 lh_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-3 px-2 text-center">
+							<div class="img_prev mb-3">
+								<img src='images/ico_2.svg' alt='' />
+							</div>
+							<h3 class="text-success fz_18 text-uppercase font-weight-bold">Поддержка 24/7</h3>
+							<p class="fz_14 lh_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-3 px-2 text-center">
+							<div class="img_prev mb-3">
+								<img src='images/ico_3.svg' alt='' />
+							</div>
+							<h3 class="text-success fz_18 text-uppercase font-weight-bold">Максимальная <br> анонимность
+								клиентов
+							</h3>
+							<p class="fz_14 lh_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-3 pb-4 pb-lg-3 px-2 text-center">
+							<div class="img_prev mb-3">
+								<img src='images/ico_4.svg' alt='' />
+							</div>
+							<h3 class="text-success fz_18 text-uppercase font-weight-bold">Быстрый обмен валют</h3>
+							<p class="fz_14 lh_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.</p>
+						</div>
+					</div>
+				</div>
+				<div class="section_news pb-5 mb-5">
+					<h2 class="text-center">Новости и статьи</h2>
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-6 col-lg-4 pb-4">
+							<div class="column rad_9 h-100 d-flex flex-column">
+								<a href="#" class="img_prev">
+									<img src='http://placeskull.com/200/100' alt='' />
+								</a>
+								<div class="text_info col d-flex flex-column p-4">
+									<p class="fz_24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna </p>
+									<div class="meta_info text-success mt-auto">
+										<span class="pr-3">08/08/22</span><span>15:38</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 pb-4">
+							<div class="column rad_9 h-100 d-flex flex-column">
+								<a href="#" class="img_prev">
+									<img src='http://placeskull.com/200/100' alt='' />
+								</a>
+								<div class="text_info col d-flex flex-column p-4">
+									<p class="fz_24">Lorem ipsum dolor</p>
+									<div class="meta_info text-success mt-auto">
+										<span class="pr-3">08/08/22</span><span>15:38</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 pb-4">
+							<div class="column rad_9 h-100 d-flex flex-column">
+								<a href="#" class="img_prev">
+									<img src='http://placeskull.com/200/101' alt='' />
+								</a>
+								<div class="text_info col d-flex flex-column p-4">
+									<p class="fz_24">Lorem ipsum dolor</p>
+									<div class="meta_info text-success mt-auto">
+										<span class="pr-3">08/08/22</span><span>15:38</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="text-center pt-3">
+						<a href="#" class="text-success fz_18 text-decoration-underline">Больше отзывов</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer pt-4 pb-3 pb-md-4">
+			<div class="centered">
+				<div class="row justify-content-center">
+					<div
+						class="copy_col col-12 col-sm-6 text-center text-sm-left col-lg-3 order-last order-sm-3 order-lg-0  pt-4 pt-lg-0">
+						<strong class="logo d-inline-block"><a href="#"><img src="images/logo.svg"
+									alt=""><i>cryptoTrans</i></a></strong>
+						<div class="copy">
+							<p>2022 © CRYPTOTRANS <br>All rights reserved.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3  d-flex flex-wrap order-1">
+						<ul class="nav pr-0 pr-sm-0 mx-auto mx-md-0">
+							<li class="active"><a href="#">Обмен</a></li>
+							<li><a href="#">Резервы</a></li>
+							<li><a href="#">Правила</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Партнерам</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<ul class="nav mx-auto text-right text-sm-left">
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">KYC/AML</a></li>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="col-12  col-md-6 col-lg-3 order-2  text-center text-md-left pt-4 pt-md-0">
+						<h4 class=" font-weight-bold mb-0">Популярные торговые пары:</h4>
+						<ul class="nav columns">
+							<li><a href="#">BTC to USDT </a></li>
+							<li><a href="#">BTC to ETH </a></li>
+							<li><a href="#">USDT to BTC </a></li>
+							<li><a href="#">XMR to USDT </a></li>
+							<li><a href="#">ETH to BTC </a></li>
+							<li><a href="#">BTC to USDT </a></li>
+							<li><a href="#">BTC to ETH </a></li>
+							<li><a href="#">USDT to BTC </a></li>
+							<li><a href="#">XMR to USDT</a></li>
+							<li><a href="#">ETH to BTC </a></li>
+						</ul>
+					</div>
+					<div
+						class="soc_col col-12 col-sm-6 col-lg-3 order-4 pt-4 pt-lg-0 text-center text-sm-right text-lg-left">
+						<p class="lh_1_2 mb-2 pb-1">Время работы:
+							<span class="text-success d-block support_txt">24/7 поддержка в чате <br>10:00 - 21:00
+								тех.поддержка </span>
+						</p>
+						<ul
+							class="soc_list list-unstyled d-flex flex-wrap align-items-center justify-content-center justify-content-sm-end justify-content-lg-start pt-3 pt-sm-0 pt-lg-2">
+							<li>
+								<a href="#">
+									<svg viewBox="0 -47 512.00004 512" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="m512 55.964844c-32.207031 1.484375-31.503906 1.363281-35.144531 1.667968l19.074219-54.472656s-59.539063 21.902344-74.632813 25.820313c-39.640625-35.628907-98.5625-37.203125-140.6875-11.3125-34.496094 21.207031-53.011719 57.625-46.835937 100.191406-67.136719-9.316406-123.703126-41.140625-168.363282-94.789063l-14.125-16.964843-10.554687 19.382812c-13.339844 24.492188-17.769531 52.496094-12.476563 78.851563 2.171875 10.8125 5.863282 21.125 10.976563 30.78125l-12.117188-4.695313-1.4375 20.246094c-1.457031 20.566406 5.390625 44.574219 18.320313 64.214844 3.640625 5.53125 8.328125 11.605469 14.269531 17.597656l-6.261719-.960937 7.640625 23.199218c10.042969 30.480469 30.902344 54.0625 57.972657 67.171875-27.035157 11.472657-48.875 18.792969-84.773438 30.601563l-32.84375 10.796875 30.335938 16.585937c11.566406 6.324219 52.4375 27.445313 92.820312 33.78125 89.765625 14.078125 190.832031 2.613282 258.871094-58.664062 57.308594-51.613282 76.113281-125.03125 72.207031-201.433594-.589844-11.566406 2.578125-22.605469 8.921875-31.078125 12.707031-16.964844 48.765625-66.40625 48.84375-66.519531zm-72.832031 48.550781c-10.535157 14.066406-15.8125 32.03125-14.867188 50.578125 3.941407 77.066406-17.027343 136.832031-62.328125 177.628906-52.917968 47.660156-138.273437 66.367188-234.171875 51.324219-17.367187-2.722656-35.316406-8.820313-50.171875-14.910156 30.097656-10.355469 53.339844-19.585938 90.875-37.351563l52.398438-24.800781-57.851563-3.703125c-27.710937-1.773438-50.785156-15.203125-64.96875-37.007812 7.53125-.4375 14.792969-1.65625 22.023438-3.671876l55.175781-15.367187-55.636719-13.625c-27.035156-6.621094-42.445312-22.796875-50.613281-35.203125-5.363281-8.152344-8.867188-16.503906-10.96875-24.203125 5.578125 1.496094 12.082031 2.5625 22.570312 3.601563l51.496094 5.09375-40.800781-31.828126c-29.398437-22.929687-41.179687-57.378906-32.542969-90.496093 91.75 95.164062 199.476563 88.011719 210.320313 90.527343-2.386719-23.183593-2.449219-23.238281-3.074219-25.445312-13.886719-49.089844 16.546875-74.015625 30.273438-82.453125 28.671874-17.621094 74.183593-20.277344 105.707031 8.753906 6.808593 6.265625 16.015625 8.730469 24.632812 6.589844 7.734375-1.921875 14.082031-3.957031 20.296875-6.171875l-12.9375 36.945312 16.515625.011719c-3.117187 4.179688-6.855469 9.183594-11.351562 15.183594zm0 0" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg viewBox="1 -104 511.99902 511" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="m456.738281 202.101562-.277343-.257812c-4.371094-4.035156-17.761719-17.066406-22.277344-22.761719-5.300782-7.105469-4.078125-11.761719-.105469-18.738281 5.019531-8.816406 15.078125-22.339844 25.722656-36.660156 34.09375-45.851563 56.105469-77.59375 51.574219-100.140625l-2.441406-12.042969-125.910156.054688c-.441407 1.1875-7.011719 30.050781-34.738282 79.199218-20.105468 35.636719-33.292968 46.832032-37.9375 48.808594l-.71875-.21875c-1.511718-1.867188-4.152344-6.90625-5.238281-19.894531-1.132813-13.605469-.128906-30.078125.84375-46.007813 1.136719-18.679687 2.117187-34.8125-.230469-46.355468l-3.824218-18.804688c-4.621094-.738281-21.539063-7.265625-68.675782-7.761719-40.808594-.417969-52.796875 5.476563-58.683594 10.671875l-19.472656 17.183594 24.613282 8.28125c9.367187 3.152344 12.476562 6.789062 15.027343 24.816406 1.664063 11.75 2.535157 31.496094.738281 49.125-2.582031 25.277344-8.773437 29.980469-9.09375 30.230469-1.066406-.363281-10.109374-4.320313-25.808593-37.511719-10.890625-23.019531-20.4375-50.25-27.414063-70.132812-7.984375-22.769532-6.546875-17.921875-10.597656-28.679688l-121.8125-.003906 7.882812 20.390625c32.863282 85.089844 63.015626 151.539063 103.367188 199.265625 44.582031 52.730469 99.988281 80.339844 174.621094 80.339844h15v-15c0-14.023438 1.160156-24.121094 3.648437-31.777344 1.519531-4.664062 3.539063-8.519531 5.660157-12.5625 3.148437-5.953125 6.226562-8.503906 7.90625-8.882812 1.523437-.347657 4.203124.769531 7.171874 2.984374 8.523438 6.355469 15.289063 14.707032 22.453126 23.550782 10.335937 12.761718 21.023437 25.953125 37.980468 34.589844 9.265625 4.71875 26.25 7.101562 35.597656 7.101562 2.472657 0 90.601563-.003906 90.710938-.003906l-.644531-15.617188c-.960938-23.351562-19.339844-52.550781-54.617188-86.777344zm-34.867187 72.394532h-.242188c-6.445312.105468-18.746094-2.007813-22.324218-3.828125-11.273438-5.742188-19.152344-15.472657-28.28125-26.738281-8.011719-9.894532-16.296876-20.125-27.832032-28.722657-9.328125-6.957031-17.800781-8.992187-24.527344-8.992187-2.6875 0-5.101562.324218-7.171874.792968-7.808594 1.757813-18.976563 7.375-27.855469 24.167969-2.503907 4.777344-5.34375 10.1875-7.644531 17.265625-2.410157 7.40625-3.910157 15.636719-4.625 25.648438-56.242188-3.195313-100.128907-25.445313-137.207032-69.300782-34.472656-40.777343-61.59375-97.8125-90.316406-170.300781 2.078125 0 54.152344.007813 57.226562.007813.941407 2.644531 1.957032 5.542968 3.035157 8.613281 7.519531 21.449219 17.820312 50.820313 29.957031 75.867187 17.378906 35.867188 33.25 51.863282 51.457031 51.863282 9.089844 0 17.242188-3.851563 23.574219-11.144532 9.027344-10.394531 14.269531-27.550781 16.027344-52.453124 1.386718-19.636719.097656-39.195313-1.425782-49.972657-1.257812-8.867187-3.050781-18.175781-7.425781-26.515625 18.644531-.839844 43.609375.488282 59.425781 2.757813 1.4375 7.828125.5 23.214843-.40625 38.101562-2.191406 35.960938-4.453124 73.070313 14.582032 90.433594 3.347656 3.054687 6.898437 4.691406 7 4.757813l9.6875 2.972656c3.738281-1.152344 25.390625 9.832031 66.390625-61.71875 13.136719-22.925782 25.367187-49.34375 31.953125-66.597656 15.273437-.03125 67.308594.027343 73.421875.035156-8.660157 19.058594-29.183594 46.242187-42.597657 64.285156-11.695312 15.726562-21.792968 29.308594-27.71875 39.714844-11.007812 19.332031-9.15625 36.5625 2.308594 51.761718l.179688.234376c6.398437 8.144531 22.199218 23.222656 25.476562 26.261718 23.742188 23.050782 35.183594 39.609375 40.628906 50.738282h-54.730468zm0 0" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="m75 512h167v-182h-60v-60h60v-75c0-41.355469 33.644531-75 75-75h75v60h-60c-16.542969 0-30 13.457031-30 30v60h87.292969l-10 60h-77.292969v182h135c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-105v-122h72.707031l20-120h-92.707031v-30h90v-120h-105c-57.898438 0-105 47.101562-105 105v45h-60v120h60v122h-137c-24.8125 0-45-20.1875-45-45zm0 0" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="m75 512h362c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-362c-24.8125 0-45-20.1875-45-45zm0 0" />
+										<path
+											d="m256 391c74.4375 0 135-60.5625 135-135s-60.5625-135-135-135-135 60.5625-135 135 60.5625 135 135 135zm0-240c57.898438 0 105 47.101562 105 105s-47.101562 105-105 105-105-47.101562-105-105 47.101562-105 105-105zm0 0" />
+										<path
+											d="m406 151c24.8125 0 45-20.1875 45-45s-20.1875-45-45-45-45 20.1875-45 45 20.1875 45 45 45zm0-60c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg viewBox="1 -35 511.99993 511" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="m121.453125 253.171875 63.554687 158.886719 82.75-82.753906 141.535157 112.503906 102.707031-441.308594-512 205.480469zm-39.933594-47.640625 244.046875-97.945312-194.074218 117.363281zm287.535157-89.25-161.980469 148.1875-19.484375 73.425781-36.035156-90.085937zm-149.851563 219.230469 9.816406-36.996094 15.144531 12.035156zm171.65625 53.394531-147.386719-117.152344 221.902344-203.007812zm0 0" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jcf.js"></script>
+	<script src="js/jcf.select.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+.custom_checkbox {
+	padding-left: 0;
+
+	&.custom-control-inline {
+		margin-right: 32px;
+	}
+
+	[type="checkbox"] {
+		&:disabled {
+			+label {
+
+				// color: $gray_2 !important;
+				&:before {
+					// background-color: $gray_1 !important;
+					// border-color: $gray_2 !important;
+				}
+			}
+
+			&:checked {
+				+label {
+					&:before {
+						background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.125 1.375L3.875 6.62477L1.25 4' stroke='%23C4CCD8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					}
+				}
+			}
+		}
+
+		&:checked,
+		&:not(:checked) {
+			position: absolute;
+			left: -9999px;
+
+			+label {
+				position: relative;
+				padding-left: 34px;
+				cursor: pointer;
+				user-select: none;
+				display: inline-block;
+				// color: $gray_6;
+				font-size: 14px;
+				line-height: 17px !important;
+
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0;
+					top: -3px;
+					width: 24px;
+					height: 24px;
+					border: 2px solid theme-color('success');
+					border-radius: 5px;
+					// background-color: #fff;
+				}
+
+				&:after {
+					content: none !important;
+					// content: '';
+					// width: 12px;
+					// height: 12px;
+					// background: theme-color("primary");
+					// position: absolute;
+					// top: 6px;
+					// left: 6px;
+					// border-radius: 100%;
+					// -webkit-transition: all 0.2s ease;
+					// transition: all 0.2s ease;
+				}
+			}
+		}
+
+		&:not(:checked) {
+			+label {
+				&:after {
+					opacity: 0;
+					-webkit-transform: scale(0);
+					transform: scale(0);
+				}
+			}
+		}
+
+		&:checked {
+			+label {
+
+				// color: theme-color("dark");
+				// &:after{
+				// 	opacity: 1;
+				// 	-webkit-transform: scale(1);
+				// 	transform: scale(1);
+				// }
+				&:before {
+					// border-color: theme-color("dark");
+					// background-color: theme-color("dark");
+					background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.125 1.375L3.875 6.62477L1.25 4' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+					background-position: 5px 50%;
+					background-size: 11px 8px;
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+}
+
+// .pseudo_checkbox {
+// 	width: 24px;
+// 	height: 24px;
+// 	border-radius: 4px;
+// 	display: block;
+// 	background: #ccc;
+// 	position: relative;
+
+// 	&:after {
+// 		content: "";
+// 		position: absolute;
+// 		top: 50%;
+// 		left: 50%;
+// 		transform: translate(-50%, -50%);
+// 		background-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.125 1.375L3.875 6.62477L1.25 4' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+// 		background-size: 14px 11px;
+// 		width: 14px;
+// 		height: 11px;
+// 	}
+// }
