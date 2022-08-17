@@ -7,14 +7,14 @@
 
 	[type="checkbox"] {
 		&:disabled {
-			+label {
+			// +label {
 
-				// color: $gray_2 !important;
-				&:before {
-					// background-color: $gray_1 !important;
-					// border-color: $gray_2 !important;
-				}
-			}
+			// 	// color: $gray_2 !important;
+			// 	// &:before {
+			// 	// 	// background-color: $gray_1 !important;
+			// 	// 	// border-color: $gray_2 !important;
+			// 	// }
+			// }
 
 			&:checked {
 				+label {

@@ -15,6 +15,12 @@
 .section_news {
 	.column {
 		background: #17313f;
+		transition: all 1s ease;
+
+		&:hover {
+			text-decoration: none;
+			background: lighten(#17313f, 5%);
+		}
 
 		.img_prev {
 			height: 150px;
@@ -318,4 +324,38 @@
 			font-size: 16px;
 		}
 	}
+}
+
+.post_section {
+	max-width: 1000px;
+}
+
+.post_cont {
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+
+	h1 {
+		font-size: 36px;
+		line-height: 43px;
+		font-weight: bold;
+		color: #192631;
+
+		@include media-breakpoint-down(md) {
+			font-size: 30px;
+			line-height: 37px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		line-height: 30px;
+		color: #192631;
+		margin-bottom: 20px;
+	}
+}
+
+.account_section {
+	max-width: 640px;
 }
