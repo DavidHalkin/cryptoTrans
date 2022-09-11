@@ -359,3 +359,34 @@
 .account_section {
 	max-width: 640px;
 }
+
+.referal_section {
+	max-width: 651px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.referal_list {
+	li {
+		padding-bottom: 10px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.table {
+	th {
+		font-size: 14px;
+		border-top-color: #174051;
+		border-bottom-color: #174051 !important;
+		background: #153443;
+	}
+
+	td {
+		font-size: 14px;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		border-top-color: #174051;
+		border-bottom-color: #174051 !important;
+	}
+}
