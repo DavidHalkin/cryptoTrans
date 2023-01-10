@@ -183,8 +183,14 @@
 	overflow: hidden;
 
 	ul {
-		max-height: 290px;
+		// m
+		height: 290px;
 		overflow: auto;
+
+		@include media-breakpoint-down(xs) {
+			height: auto;
+			ax-height: 290px;
+		}
 	}
 
 	li {

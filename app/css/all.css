@@ -450,7 +450,9 @@ body.overflow { overflow: hidden; }
 
 .items_list { border: 1px solid #304955; overflow: hidden; }
 
-.items_list ul { max-height: 290px; overflow: auto; }
+.items_list ul { height: 290px; overflow: auto; }
+
+@media (max-width: 575.98px) { .items_list ul { height: auto; ax-height: 290px; } }
 
 .items_list li.active a { background: #23404e; }
 
