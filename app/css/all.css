@@ -23,6 +23,8 @@ a, .btn { -webkit-transition: all 0.3s ease; -o-transition: all 0.3s ease; trans
 
 .fz_12 { font-size: 12px; }
 
+.fz_13 { font-size: 13px; }
+
 .fz_14 { font-size: 14px; }
 
 .fz_16 { font-size: 16px; }
@@ -128,6 +130,54 @@ label { font-size: 14px; line-height: 18px; padding-left: 8px; }
 .copy_link:hover path, .ico_link:hover path { fill: #32c79f; }
 
 .ico_link { width: 21px; max-width: 21px; -webkit-box-flex: 0; -ms-flex: 0 0 21px; flex: 0 0 21px; height: 21px; margin-top: 1px; }
+
+.search_ico { --size: 14px; max-width: var(--size); -webkit-box-flex: 0; -ms-flex: 0 0 var(--size); flex: 0 0 var(--size); width: var(--size); position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); fill: #fff; }
+
+.bdw_1 { border-width: 1px; }
+
+.telegramm_ico { font-size: 0; line-height: 0; }
+
+.telegramm_ico svg { --size: 20px; max-width: var(--size); -webkit-box-flex: 0; -ms-flex: 0 0 var(--size); flex: 0 0 var(--size); width: var(--size); fill: #fff; }
+
+.custom_input { position: relative; --size: 17px; }
+
+.custom_input .form-control { padding-right: calc(var(--size) + 20px); height: 40px; color: #000; -webkit-border-radius: 4px !important; border-radius: 4px !important; }
+
+.custom_input .form-control.bg-primary-300:focus { background-color: rgba(55, 174, 236, 0.25); }
+
+.custom_input .form-control.bg-primary-300::-webkit-input-placeholder { color: #ccc; }
+
+.custom_input .form-control.bg-primary-300:-moz-placeholder { color: #ccc; }
+
+.custom_input .form-control.bg-primary-300::-moz-placeholder { color: #ccc; }
+
+.custom_input .form-control.bg-primary-300:-ms-input-placeholder { color: #ccc; }
+
+.custom_input .form-control.bg-transparent::-webkit-input-placeholder { color: #ccc; }
+
+.custom_input .form-control.bg-transparent:-moz-placeholder { color: #ccc; }
+
+.custom_input .form-control.bg-transparent::-moz-placeholder { color: #ccc; }
+
+.custom_input .form-control.bg-transparent:-ms-input-placeholder { color: #ccc; }
+
+.custom_input .form-control:placeholder-shown + .ico img { -webkit-filter: grayscale(100%); filter: grayscale(100%); opacity: .4; }
+
+.custom_input .ico { max-width: var(--size); -webkit-box-flex: 0; -ms-flex: 0 0 var(--size); flex: 0 0 var(--size); width: var(--size); position: absolute; top: 50%; right: 10px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); z-index: 20; }
+
+.custom_input .ico img { display: block; max-width: 100%; height: auto; }
+
+.bg-primary-300 { background-color: rgba(55, 174, 236, 0.2); }
+
+.f_block { position: relative; }
+
+.bd-gray { border-color: #ccc !important; }
+
+.revers_link { --size: 30px; max-width: var(--size); -webkit-box-flex: 0; -ms-flex: 0 0 var(--size); flex: 0 0 var(--size); width: var(--size); height: var(--size); -webkit-border-radius: 50%; border-radius: 50%; display: block; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.revers_link svg { position: absolute; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+div[countdown] { --size: 20px; --deg: -1; --col: hsla(164, 60%, 49%, 1); height: var(--size); width: var(--size); -webkit-border-radius: 50%; border-radius: 50%; text-align: center; font-size: 11px; line-height: var(--size); background-image: -webkit-radial-gradient(#fff 8px, #f000 1px), conic-gradient(var(--col) calc(var(--deg) * 1deg - 1deg), transparent calc(var(--deg) * 1deg + 1deg)), -webkit-radial-gradient(#fff 9px, #fff 5px); background-image: -o-radial-gradient(#fff 8px, #f000 1px), conic-gradient(var(--col) calc(var(--deg) * 1deg - 1deg), transparent calc(var(--deg) * 1deg + 1deg)), -o-radial-gradient(#fff 9px, #fff 5px); background-image: radial-gradient(#fff 8px, #f000 1px), conic-gradient(var(--col) calc(var(--deg) * 1deg - 1deg), transparent calc(var(--deg) * 1deg + 1deg)), radial-gradient(#fff 9px, #fff 5px); }
 
 @font-face { font-family: 'Proxima Nova Rg'; src: url("../fonts//ProximaNova-Bold.eot"); src: url("../fonts//ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts//ProximaNova-Bold.woff2") format("woff2"), url("../fonts//ProximaNova-Bold.woff") format("woff"), url("../fonts//ProximaNova-Bold.ttf") format("truetype"), url("../fonts//ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"); font-weight: bold; font-style: normal; font-display: swap; }
 
