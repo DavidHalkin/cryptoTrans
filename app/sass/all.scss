@@ -184,19 +184,26 @@
 
 	ul {
 		// m
-		height: 290px;
+		// height: 290px;
+		height: 360px;
 		overflow: auto;
 
 		@include media-breakpoint-down(xs) {
 			height: auto;
-			ax-height: 290px;
+			// max-height: 290px;
+			max-height: 360px;
 		}
 	}
 
 	li {
 		&.active {
 			a {
-				background: #23404e;
+				// background: #23404e;
+				background: theme-color('success') !important;
+
+				span {
+					color: #fff;
+				}
 			}
 		}
 
@@ -205,7 +212,12 @@
 
 			&:hover {
 				text-decoration: none;
-				background: #23404e;
+				// background: #23404e;
+				background: rgba(theme-color('success'), .5);
+
+				span {
+					color: #fff;
+				}
 			}
 		}
 	}
@@ -240,6 +252,7 @@
 			color: #787e84;
 			font-size: 10px;
 			line-height: 12px;
+			transition: all 0.3s ease;
 		}
 	}
 }
