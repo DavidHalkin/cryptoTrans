@@ -1,6 +1,25 @@
 .custom_select {
 	margin-bottom: 15px;
-
+	.header & {
+		margin-bottom: 0;
+		--s: 100px;
+		width: var(--s);
+		flex: 0 0 var(--s);
+		.jcf-select {
+			border-width: 0 !important;
+			height: 30px;
+			.jcf-select-text {
+				justify-content: flex-end;
+				line-height: 30px;
+			}
+			img {
+				--s: 20px;
+				max-width: var(--s);
+				flex: 0 0 var(--s);
+				height: var(--s);
+			}
+		}
+	}
 	select {
 		display: none;
 	}
