@@ -2,7 +2,7 @@
 	margin-bottom: 15px;
 	.header & {
 		margin-bottom: 0;
-		--s: 100px;
+		--s: 70px;
 		width: var(--s);
 		flex: 0 0 var(--s);
 		.jcf-select {
@@ -11,6 +11,9 @@
 			.jcf-select-text {
 				justify-content: flex-end;
 				line-height: 30px;
+				span {
+					padding-left: 0 !important;
+				}
 			}
 			img {
 				--s: 20px;
@@ -215,7 +218,12 @@
 }
 .jcf-select-lang {
 	&.jcf-select-drop {
-		width: 100px !important;
+		// width: 50px !important;
+		ul {
+			span {
+				text-align: center;
+			}
+		}
 	}
 
 	img {
