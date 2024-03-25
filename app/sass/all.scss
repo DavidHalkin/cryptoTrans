@@ -409,3 +409,31 @@
 		border-bottom-color: #174051 !important;
 	}
 }
+.modal-dialog {
+	color: #000;
+	a {
+		color: theme-color('success');
+		text-decoration: underline;
+	}
+}
+.alert_icon,
+.close_icon {
+	--size: 20px;
+	max-width: var(--size);
+	flex: 0 0 var(--size);
+	fill: currentColor;
+}
+.modal-dialog .close_icon {
+	--size: 30px;
+	cursor: pointer;
+}
+.modal-open {
+	.wrapper {
+		filter: blur(5px);
+	}
+}
+
+.alert_message {
+	flex-basis: auto;
+	max-width: none;
+}

@@ -12,6 +12,23 @@
 
 <body>
 	<div class="wrapper">
+		<div class="alert_message bg-danger toast fade show mb-0" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="centered py-2 d-flex">
+				<div class="d-flex col">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="alert_icon text-warning mr-2">
+						<path
+							d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+					</svg>
+					<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. In sequi consequatur sint iusto
+						ipsa saepe. Ratione sit fugit beatae omnis cum, atque saepe alias voluptatum at ipsam aspernatur nobis
+						praesentium.</p>
+				</div>
+				<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+
+			</div>
+		</div>
 		<div class="header">
 			<div class="centered d-flex align-items-center">
 				<strong class="logo"><a href="#"><img src="images/logo.svg" alt=""><i>cryptoTrans</i></a></strong>
@@ -547,7 +564,9 @@
 							<p class="text-muted fz_14 text-center pt-2">Нажимая кнопку "Перейти к оплате", я соглашаюсь с
 								<a href="#" class="text-muted text-decoration-underline">правилами обмена</a>
 							</p>
-							<button class="btn btn-primary btn-block py-3">Перейти к оплате</button>
+							<button class="btn btn-primary btn-block py-3" data-toggle="modal"
+								data-target="#exampleModal">Перейти к
+								оплате</button>
 						</div>
 					</div>
 				</div>
@@ -801,11 +820,54 @@
 			</div>
 		</div>
 	</div>
+	<!-- Modal -->
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+		data-backdrop="static">
+		<div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header align-items-center">
+					<div class="d-flex align-items-center col px-0">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="alert_icon text-danger mr-2">
+							<path
+								d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" />
+						</svg>
+						<p class="mb-0">Lorem <strong>ipsum dolo</strong>r, sit amet <strong>consectetur adipisicing</strong>
+							elit. consectetur adipisicing consectetur adipisicing</p>
+					</div>
+					<div class="close_icon ml-auto text-primary" data-dismiss="modal" aria-label="Close">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path
+								d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+						</svg>
+					</div>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum architecto delectus eos voluptatem
+						quidem explicabo repellendus maxime aperiam rerum,<a href="#" target="_blank"> ratione labore
+						</a>cupiditate consequuntur maiores magni
+						asperiores nobis iure ea dolore?</p>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque aliquam fuga harum nam. Inventore
+						voluptatem, quasi quae dolorem sapiente eum labore porro doloribus iste ducimus sit repellat illo,
+						beatae voluptas!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success btn-block" data-dismiss="modal">Обмен</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/jcf.js"></script>
 	<script src="js/jcf.select.js"></script>
+	<script>
+		$('.toast').toast();
+	</script>
 </body>
 
 </html>
